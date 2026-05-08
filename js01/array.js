@@ -38,3 +38,12 @@
 
 // const mixArr=[1,2,[3,4],[5,[6,7,8]],9]
 // console.log(mixArr.flat(Infinity))
+
+let v1=100
+let v2=200
+let v3=300
+
+console.log(Array.of(v1,v2,v3));  //create array of multiple variable
+
+console.log(Array.from("Manish")) //Create array of Manish 
+console.log(Array.from({name:"hitesh"})) //return empty array 
