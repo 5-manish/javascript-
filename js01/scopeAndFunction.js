@@ -48,3 +48,32 @@ const chai = () =>{
     console.log(this.name) //same as above
     console.log(name)
 }
+
+
+//basic arrow function
+const add=(num1,num2)=>{
+    return num1+ num2  //explicit return 
+}
+
+console.log(add(2,4))
+
+//OR                        Agar curly bracket use kar rahe hai toh return likhna padega
+//const add1=(num1,num2)=> num1+num2   //implicit return both
+const add1=(num1,num2)=> (num1+num2)
+console.log(add1(2,4));
+//Return object through arrow fun
+//const add1=(num1,num2)=> ({username:"Manish"})
+
+
+//Immediately Invoked Function Expression (IIFE)
+
+// write function inside () bracket and just after ending call using () and do not forgot to use; any sentence of this function and also after this function call
+//named iife
+(function display(){
+    console.log("Hello IIFE 1");
+})();
+
+//unnamed iife
+((name)=>{
+    console.log(`${name} Baba`)
+})('Manu')
